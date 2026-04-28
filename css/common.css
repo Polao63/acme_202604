@@ -1,2 +1,6 @@
 /* 모든 페이지에 공통 적용될 스타일 */
 @import url('normalize.css');
+
+h1{
+    font-size: 55px;
+}
