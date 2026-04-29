@@ -13,3 +13,6 @@
 .align-items-center{
   align-items: center;
 }
+.gap-1{
+  gap: var(--base-unit);
+}
