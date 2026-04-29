@@ -24,10 +24,10 @@
     font-size: 36px;
 }
 
-.features ul li h3{
-    /* margin-bottom:var(--base-unit);
-    margin-top:var(--base-unit); */
-}
+/* .features ul li h3{
+    margin-bottom:var(--base-unit);
+    margin-top:var(--base-unit);
+} */
 
 .features ul li{
     display: flex;
