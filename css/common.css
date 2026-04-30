@@ -124,13 +124,26 @@ form .field {
   align-items: center;
   color: var(--light--gray);
 }
+
+form .field label{
+  display: flex;
+}
+
+form .field:focus-within{
+  box-shadow: inset 0 0 5px rgba(72, 0, 255, 0.7);
+}
+
+
 form .field input {
   font-style: italic;
   color: var(--black);
+  outline: none;
+  width: 100%;
 }
 form .field input::placeholder {
   color: var(--super--light--gray);
 }
+
 form button {
   height: calc(var(--base-unit) * 2);
   border-radius: 3px;
