@@ -124,26 +124,21 @@ form .field {
   align-items: center;
   color: var(--light--gray);
 }
-
-form .field label{
+form .field label {
   display: flex;
 }
-
-form .field:focus-within{
-  box-shadow: inset 0 0 5px rgba(72, 0, 255, 0.7);
-}
-
-
 form .field input {
   font-style: italic;
   color: var(--black);
-  outline: none;
   width: 100%;
+  outline: none;
+}
+form .field:focus-within {
+  box-shadow: inset 0 0 5px rgba(72, 0, 255, 0.7);
 }
 form .field input::placeholder {
   color: var(--super--light--gray);
 }
-
 form button {
   height: calc(var(--base-unit) * 2);
   border-radius: 3px;
@@ -158,7 +153,8 @@ form button {
 }
 /* 레이아웃 */
 .container {
-  width: 1272px;
+  max-width: 1272px;
+  width: 100%;
   margin: 0 auto;
 }
 .inner-pd {
@@ -186,17 +182,22 @@ hr {
   text-decoration: underline;
   color: var(--primary);
 }
-
-section .header{
+section .header {
   margin-bottom: calc(var(--base-unit) * 2);
 }
-
 
 /* 헤더 */
 body > header {
   background: var(--white);
   padding: var(--base-unit) 0;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  transition: 0.3s ease-out;
+}
+
+body > header.fixed {
+  padding: calc(var(--base-unit) / 2) 0;
 }
 
 header nav ul {
@@ -223,12 +224,10 @@ header nav ul li:first-child {
   align-items: center;
   gap: var(--base-unit);
 }
-
-.slidecontainer li > p{
+.slidecontainer li > p {
   width: 700px;
   text-align: center;
 }
-
 .slidewrapper button {
   width: 45px;
   height: 45px;
