@@ -39,3 +39,16 @@ questions.forEach(q => {
   });
 });
 */
+
+const portfolioSwiper = new Swiper(".portfolio-swiper", {
+  loop: true,
+
+  navigation: {
+    nextEl: ".portfolio .next",
+    prevEl: ".portfolio .prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

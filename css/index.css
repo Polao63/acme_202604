@@ -26,13 +26,15 @@
 .features .icon span {
   font-size: 36px;
 }
-.testimonial li {
+.testimonial .swiper-slide {
   font-weight: 300;
   color: var(--light-blue);
   text-align: center;
 }
 .testimonial blockquote {
   width: 840px;
+  margin: 0 auto;
+
   font-style: italic;
   font-size: 24px;
   line-height: 36px;

@@ -212,8 +212,8 @@ header nav ul li:first-child {
   position: relative;
   overflow: hidden;
 }
-.slidecontainer {
-  width: 300%; /* js 부모 너비파악, 슬라이드 개수 파악, 너비 계산 지정할 예정 */
+/*.slidecontainer {
+  width: 300%; /* js 부모 너비파악, 슬라이드 개수 파악, 너비 계산 지정할 예정 
   display: flex;
   transition: 0.3s ease-out;
 }
@@ -223,11 +223,28 @@ header nav ul li:first-child {
   flex-direction: column;
   align-items: center;
   gap: var(--base-unit);
+}*/
+
+.portfolio-swiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.slidecontainer li > p {
+
+.portfolio-swiper .swiper-slide > p {
   width: 700px;
   text-align: center;
+  margin-top: 20px;
 }
+
+.portfolio-swiper .swiper-slide > a {
+  width: 700px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
 .slidewrapper button {
   width: 45px;
   height: 45px;
@@ -239,12 +256,18 @@ header nav ul li:first-child {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 100;
 }
 .slidewrapper button.prev {
   left: 0;
 }
 .slidewrapper button.next {
   right: 0;
+}
+
+.testimonial-swiper {
+  position: relative;
+  z-index: 1;
 }
 
 /* CTA */
@@ -254,3 +277,5 @@ header nav ul li:first-child {
 .cta h3 {
   color: var(--white);
 }
+
+

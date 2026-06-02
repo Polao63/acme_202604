@@ -13,6 +13,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/about.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js">
+    </script>
+
   </head>
 
   <body>
@@ -127,7 +138,7 @@
           <h3 class="text-body-l">Example Portfolios</h3>
           <p class="text-body-m-plus">Here's some examples of what you can create with our app.</p>
         </div>
-        <ul class="slidecontainer">
+        <!-- <ul class="slidecontainer">
           <li>
             <img src="images/portfolio_01.jpg" alt="portfolio_01" />
             <p>
@@ -155,14 +166,51 @@
             </p>
             <a href="" class="text-link">Link to portfolio &rarr;</a>
           </li>
-        </ul>
+        </ul> -->
+        <div class="swiper portfolio-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/portfolio_01.jpg" alt="portfolio_01" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem consequatur
+                facere, dolores fugiat magnam neque doloribus sint, ea odio sed dicta eos iste quos
+                accusantium quia! Ut, pariatur quia.
+              </p>
+              <a href="" class="text-link">Link to portfolio &rarr;</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/portfolio_01.jpg" alt="portfolio_01" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem consequatur
+                facere, dolores fugiat magnam neque doloribus sint, ea odio sed dicta eos iste quos
+                accusantium quia! Ut, pariatur quia.
+              </p>
+              <a href="" class="text-link">Link to portfolio &rarr;</a>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/portfolio_01.jpg" alt="portfolio_01" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem consequatur
+                facere, dolores fugiat magnam neque doloribus sint, ea odio sed dicta eos iste quos
+                accusantium quia! Ut, pariatur quia.
+              </p>
+              <a href="" class="text-link">Link to portfolio &rarr;</a>
+            </div>
+          
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+
         <button type="button" class="button prev">
           <span class="material-icons">chevron_left</span>
         </button>
         <button type="button" class="button next">
           <span class="material-icons">chevron_right</span>
         </button>
+
       </section>
+
       <section class="cta inner-pd d-flex flex-column align-items-center g-2">
         <div class="content d-flex flex-column g-1">
           <h3 class="text-body-l">It's awesome. And it's FREE!</h3>
@@ -175,8 +223,8 @@
       <p>&copy; 2014. All rights reserved. Questions?</p>
       <p>Email us at <a href="#" class="text-link">office@product.com</a></p>
     </footer>
-    <script src="js/main.js"></script>
-    <script src="js/about.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/about.js"></script>
     
     <script type="module" src="/js/module/header.js"></script>
     <script type="module" src="/js/module/footer.js"></script>
